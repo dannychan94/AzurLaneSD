@@ -400,7 +400,7 @@ var load = function (
 function saveCanvas(canvas, filename) {
 	var data = canvas.toDataURL();
 	var link = document.createElement('a');
-	link.innerHTML = "download";
+	link.innerText = "download";
 	document.body.appendChild(link);
 	link.download = filename;
 	link.href = data;
