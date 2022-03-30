@@ -119,10 +119,10 @@ var load = function (
 			input.remove();
 		})
 		$('#share').on('mouseenter', function () {
-			showMessage('点击左上分享按钮，即可将当前角色及动作分享给他人', 4000);
+			showMessage('Haz clic en el botón de compartir en la parte superior izquierda para compartir tu personaje y acciones actuales con los demás', 4000);
 		})
 		$('#share').on('click', function () {
-			showMessage('链接已复制至剪贴板', 1000);
+			showMessage('El enlace se ha copiado en el portapapeles', 1000);
 		})
 
 		// set scale method
@@ -187,7 +187,7 @@ var load = function (
 	}
 	var init = function () {
 		isMobile = checkMobile();
-		showMessage('拖动鼠标以移动，点击左下角以重置', 4000);
+		showMessage('Arrastra el ratón para moverte, haz clic en la esquina inferior izquierda para restablecer', 4000);
 		// Setup canvas and WebGL context. We pass alpha: false to canvas.getContext() so we don't use premultiplied alpha when
 		// loading textures. That is handled separately by PolygonBatcher.
 		canvas = document.getElementById('canvas');
