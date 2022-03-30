@@ -396,3 +396,11 @@ var load = function (
 		init();
 	});
 }
+//save canvas to image via canvas.toDataURL()
+function saveCanvas(canvas, filename) {
+	var data = canvas.toDataURL();
+	var link = document.createElement('a');
+	link.download = filename;
+	link.href = data;
+	link.click();
+}
